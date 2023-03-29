@@ -1,8 +1,8 @@
 <?php
 
 // configure
-$from = 'info@yourdomain.com'; // Replace it with Your Hosting Admin email. REQUIRED!
-$sendTo = 'your@mail.com'; // Replace it with Your email. REQUIRED!
+$from = 'contact@aetherealtea.github.io'; // Replace it with Your Hosting Admin email. REQUIRED!
+$sendTo = 'theo.issena@gmail.com'; // Replace it with Your email. REQUIRED!
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email. If you added or deleted a field in the contact form, edit this array.
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
@@ -67,6 +67,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
             header('Content-Type: application/json');
 
             echo $encoded;
+
     endif;
 else:
     $errorMessage = 'Please click on the reCAPTCHA box.';
